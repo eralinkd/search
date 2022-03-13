@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Search</title>
+
+<style type="text/css">
+            body{
+                font-size: 14px;
+                font-family: arial,sans-serif;
+                color: #202124;
+            }
+            img{
+                object-fit: contain;
+                object-position: center bottom;
+            }
+            .head{
+                height: 70px;
+                text-align: right;
+                padding: 10px 30px;
+            }
+            a{
+                color: rgba(0,0,0,0.87);
+                text-decoration: none;
+                font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
+                margin-right: 10px;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            .main{
+                padding: 20px;
+            }
+            input[type="text"]{
+                font-size: 16px;
+                display: block;
+                width:  35%;
+                margin: auto;
+                border-radius: 24px;
+                height: 44px;
+                border: 1px solid #dfe1e5;
+                padding: 0 24px;
+                box-shadow: ;
+            }
+            input[type="text"]:hover, input[type="text"]:active{
+                box-shadow: inset -1px 0px 13px -9px #000000;
+            }
+            input[type="submit"]{
+                background-color: #f8f9fa;
+                border: 1px solid #f8f9fa;
+                border-radius: 4px;
+                color: #3c4043;
+                font-family: arial,sans-serif;
+                font-size: 14px;
+                margin: 29px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+            }
+            input[type="submit"]:hover{
+                box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+                background-color: #f8f9fa;
+                border: 1px solid #dadce0;
+                color: #202124;
+            }
+            .hidden{
+            	display: none !important;
+            }
+        </style>
+
+</head>
+<body>
+	<div class="head">
+            <a href="index.html">Звичайний пошук</a>
+            <a href="extended_search.html">Розширений пошук</a>
+        </div>
+
+        <center><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="272" height="92"></center>
+
+        <div class="main">
+            <form action="https://google.com/search">
+                <input type="text" name="q">
+                <input class="hidden" type="text" name="tbm" value="isch">
+                <div class="inputs">
+                    <center>
+                    <input type="submit" value="Пошук по фото">
+                </center>
+                </div>
+            </form>
+        </div>
+		
+</body>
+</html>

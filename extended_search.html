@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Search</title>
+	<style>
+			body{
+                font-size: 14px;
+                font-family: arial,sans-serif;
+                color: #202124;
+            }
+            img{
+                object-fit: contain;
+                object-position: center bottom;
+            }
+            .head{
+                height: 70px;
+                text-align: right;
+                padding: 10px 30px;
+            }
+            a{
+                color: rgba(0,0,0,0.87);
+                text-decoration: none;
+                font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
+                margin-right: 10px;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            span{
+            	float: left;
+            	content: url(https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg);
+			    display: inline-block;
+			    height: 24px;
+			    width: 74px;
+            }
+            .form{
+            	display: grid;
+            	grid-template-columns: 20% 40% auto;
+            	margin-left: 50px;
+            	grid-gap: 10px;
+            }
+            .form *{
+            	padding: 10px 20px;
+            }
+            input[type="text"]{
+            	border: 1px solid #d9d9d9;
+            	vertical-align: middle;
+            	height: 25px;
+    			padding: 1px 8px;
+            }
+            input[type="submit"]{
+            	display: block;
+            	user-select: none;
+			    height: 30px;
+			    width:  120px;
+			    min-width: 120px;
+			    vertical-align: middle;
+			    padding: 0 12px;
+			    background-color: #4d90fe;
+    			background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+    			border: 1px solid #3079ed;
+    			color: #fff;
+    			border-radius: 2px;
+    			cursor: default;
+    			font-size: 11px;
+    			font-weight: bold;
+    			text-align: center;
+    			margin: 10px 0 auto 0;
+			}
+            div{
+            	display:  block;
+            	font: 13px arial, sans-serif;
+            	color: #222222;
+            }
+            h1{
+            	font: 16px arial, sans-serif;
+            	color: #333333;
+            	font-weight: 700;
+            }
+            .hidden{
+            	visibility: hidden;
+            }
+	</style>
+</head>
+<body>
+	<div class="head">
+		<span></span>
+        <a href="index.html">Звичайний пошук</a>
+        <a href="img_search.html">Пошук зображень</a>
+    </div>
+
+    <form action="https://google.com/search">
+    	<div class="form">
+    	<h1>Знайти сторінки</h1><h1 class="hidden">2</h1><h1>Як це працює в звичайному пошуку</h1>
+    	<div>зі словами:</div><input type="text" name="as_q"><div>Введіть ключові слова</div>
+    	<div>зі словосполученням:</div><input type="text" name="as_epq"><div>Огорніть словосполучення лапками</div>
+    	<div>із будь-яким з цих слів:</div><input type="text" name="as_oq"><div>Введіть оператор OR між словами</div>
+    	<div>без слів:</div><input type="text" name="as_eq"><div>Поставте знак "-" перед словом</div>
+    	<input class="hidden" type="submit" value="Знайти">
+    	<input type="submit" value="Знайти">
+    	<input class="hidden" type="submit" value="Знайти">
+    	</div>
+    </form>
+		
+</body>
+</html>
